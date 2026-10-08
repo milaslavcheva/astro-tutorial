@@ -2,6 +2,7 @@
 import "./assets/about.css";
 import "./assets/global.css";
 import Navigation from "../components/Navigation.astro";
+import Footer from '../components/Footer.astro';
 const pageTitle = "About Me";
 
 const identity = {
@@ -67,6 +68,6 @@ const textCase = "uppercase";
 ) : (
   <p>My goal is not 3 days.</p>
 )}
-
+<Footer />
 </body>
 </html>
