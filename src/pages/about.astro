@@ -1,4 +1,5 @@
 ---
+import "./assets/style.css";
 const pageTitle = "About Me";
 
 const identity = {
@@ -12,6 +13,9 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
 const finished = false;
 const goal = 3;
+const skillColor = "crimson";
+const fontWeight = "bold";
+const textCase = "uppercase";
 ---
 
 <html lang="en">
@@ -23,7 +27,8 @@ const goal = 3;
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
-<body>
+
+<body style={`--skillColor: ${skillColor}; --fontWeight: ${fontWeight}; --textCase: ${textCase};`}>
 <a href="/">Home</a>
 <a href="/about/">About</a>
 <a href="/blog/">Blog</a>
@@ -50,7 +55,7 @@ const goal = 3;
 <p>My skills are:</p>
 
 <ul>
-  {skills.map((skill) => <li>{skill}</li>)}
+ {skills.map((skill) => <li class="skill">{skill}</li>)}
 </ul>
 
 {happy && <p>I am happy to be learning Astro!</p>}
