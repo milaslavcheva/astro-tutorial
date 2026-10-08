@@ -1,7 +1,7 @@
 ---
 import "./assets/about.css";
 import "./assets/global.css";
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import Footer from '../components/Footer.astro';
 const pageTitle = "About Me";
 
@@ -32,7 +32,7 @@ const textCase = "uppercase";
 	</head>
 
 <body style={`--skillColor: ${skillColor}; --fontWeight: ${fontWeight}; --textCase: ${textCase};`}>
-<Navigation />
+<Header />
 
   
   <h1>{pageTitle}</h1>
